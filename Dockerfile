@@ -20,7 +20,8 @@ RUN set -x && \
   easy_install3 pip==8.1.2 && \
   pip install \
     ipython==5.1.0 \
-    asv==0.1.1
+    asv==0.1.1 && \
+  ln -s /usr/bin/python3 /usr/bin/python
 
 RUN mkdir /workspace
 VOLUME /workspace
